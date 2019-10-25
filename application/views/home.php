@@ -16,7 +16,7 @@
 </div>
 <?php if(ENVIRONMENT === 'PRODUCTION'): ?>
     <script src="/react-app/build/static/js/2.834357fc.chunk.js"></script>
-    <script src="/react-app/build/static/js/main.d5730657.chunk.js"></script>
+    <script src="/react-app/build/static/js/main.945d70ed.chunk.js"></script>
     <script src="/react-app/build/static/js/runtime-main.d247ced4.js"></script>
 <?php else: ?>
     <script src="http://localhost:3000/static/js/bundle.js"></script>
