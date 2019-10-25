@@ -17,7 +17,7 @@ class MyPDO
         if (self::$instance === null) {
             try {
                 $opt = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC);
-                self::$instance = new PDO('mysql:host=localhost;dbname=beejeedb;charset=utf8', 'root', '', $opt);
+                self::$instance = new PDO('mysql:host=eu-cdbr-west-02.cleardb.net;dbname=heroku_904832170d55b88;charset=utf8', 'be3d0b513643c9', 'dd30b081', $opt);
             } catch (PDOException $e) {
                 print("Error! " . $e->getMessage() . "<br>");
                 die();
