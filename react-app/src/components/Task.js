@@ -72,7 +72,7 @@ class Task extends React.Component {
                         <h5>Почта - {task.user_email}</h5>
                         <h5>Задача: </h5>
                         <div className="task-text-container">{task.text}</div>
-                        <Button variant="danger" onClick={this.modalShow}>Редактировать</Button>
+                        {is_admin && <Button variant="danger" onClick={this.modalShow}>Редактировать</Button>}
                         {status ?
                             <h6>Задача выполнена</h6> :
                             is_admin &&
